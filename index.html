@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youtube.com</title>
+    <link rel="stylesheet" href="fonts/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.theme.default.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            text-decoration: none;
+            list-style-type: none;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #0F0F0F;
+            color: white   ;
+        }
+        .newowl1 , .help1{
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid position-fixed top-0 " style="background-color: #0F0F0F; z-index: 9999;">
+        <div class="row p-3 fs-3 d-none d-lg-flex">
+            <div class="col-2  d-flex align-items-center">
+                <i class="fa-solid fa-list-ul "></i>
+                <i class="fa-brands fa-youtube ms-3" style="color: #fa0000;"></i>
+                <span class=" fw-bolder">YouTube</span>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-lg-4 col-xxl-3">
+                <div class="searchbox " style="background-color: #121212;border:1px solid gray; border-radius: 50px;">
+                    <div class="row p-1">
+                        <div class="col-10 d-flex align-items-center"><input type="text" class="bg-transparent fs-4 w-100 text-white ms-2" style="border:0;outline: none;" placeholder="Search"></div>
+                        <div class="col-1 ms-4 d-flex align-items-center" style="background-color: #222222;border-radius: 0 50px 50px 0; border-left: 1px solid white;"><i class="fa-solid fa-magnifying-glass fs-4"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1 col-xxl-3"><i class="fa-solid fa-microphone p-2 rounded-5" style="background-color: #222222;"></i></div>
+            <div class="col-lg-3 col-xxl-2 d-flex justify-content-around align-items-center">
+                <div class="create p-1 rounded-5" style="background-color: #222222; width: 150px;"><i class="fa-solid fa-plus"></i><span class="ms-3">Create</span></div>
+                <i class="fa-regular fa-bell"></i>
+                <img src="img/my user5.jpg" width="50px" class="rounded-5" alt="">
+            </div>
+            <div class="col-11 offset-1 mt-3 d-flex help1">
+                <div class="ms-3"><a href="" class="text-decoration-none text-black p-1 rounded-2" style="background-color: white;"><span>All</span></a></div>
+                <div class="ms-3"><a href="" class="text-decoration-none text-white p-1 rounded-2" style="background-color: #272727;"><span>Gaming</span></a></div>
+                <div class="ms-3"><a href="" class="text-decoration-none text-white p-1 rounded-2" style="background-color: #272727;"><span>Call of duty</span></a></div>
+                <div class="ms-3"><a href="" class="text-decoration-none text-white p-1 rounded-2" style="background-color: #272727;"><span>Rap</span></a></div>
+                <div class="ms-3"><a href="" class="text-decoration-none text-white p-1 rounded-2" style="background-color: #272727;"><span>Indie games</span></a></div>
+                <div class="ms-3"><a href="" class="text-decoration-none text-white p-1 rounded-2" style="background-color: #272727;"><span>Rapping</span></a></div>
+                <div class="ms-3"><a href="" class="text-decoration-none text-white p-1 rounded-2" style="background-color: #272727;"><span>Comedy</span></a></div>
+                <div class="ms-3"><a href="" class="text-decoration-none text-white p-1 rounded-2" style="background-color: #272727;"><span>Cars</span></a></div>
+                <div class="ms-3"><a href="" class="text-decoration-none text-white p-1 rounded-2" style="background-color: #272727;"><span>Recently uploaded</span></a></div>
+                <div class="ms-3"><a href="" class="text-decoration-none text-white p-1 rounded-2" style="background-color: #272727;"><span>Watched</span></a></div>
+                <div class="ms-3"><a href="" class="text-decoration-none text-white p-1 rounded-2" style="background-color: #272727;"><span>Live</span></a></div>
+                <div class="ms-3"><a href="" class="text-decoration-none text-white p-1 rounded-2" style="background-color: #272727;"><span>Action-games</span></a></div>
+                <div class="ms-3"><a href="" class="text-decoration-none text-white p-1 rounded-2" style="background-color: #272727;"><span>New to you</span></a></div>
+            </div>
+            <div class="row position-absolute flex-column fs-5" style="left: 0; top:5rem;">
+                <div class="col-1 text-center mt-1"><i class="fa-solid fa-house"></i> <p>Home</p> </div>
+                <div class="col-1 text-center mt-1"><i class="fa-brands fa-square-youtube"></i> <p>Shorts</p> </div>
+                <div class="col-1 text-center mt-1"><i class="fa-solid fa-film"></i> <p>Subscribtion</p> </div>
+                <div class="col-1 text-center mt-1"><i class="fa-solid fa-circle-user"></i> <p>you</p> </div>
+            </div>
+        </div>
+
+
+        <div class="row d-lg-none p-2">
+            <div class="col-6 fs-4" style="border-bottom:1px solid white;">
+                <i class="fa-brands fa-youtube" style="color: #fa0000;"></i>
+                <span class=" fw-bolder">YouTube</span>
+            </div>
+            <div class="col-6 d-flex align-items-center justify-content-end" style="border-bottom:1px solid white;">
+                <i class="fa-solid fa-magnifying-glass fs-4"></i>
+            </div>
+            <div class="col-12  " style="border-bottom:1px solid white">
+                <div class="owl-carousel owl-theme newowl1 p-2">
+                    <div class="item"><a href="" class="text-decoration-none text-black p-1 rounded-2 ms-1" style="background-color: white;"><span>All</span></a></div>
+                    <div class="item"><a href="" class="text-decoration-none text-white p-1 rounded-2 ms-1" style="background-color: #272727;"><span>Gaming</span></a></div>
+                    <div class="item"><a href="" class="text-decoration-none text-white p-1 rounded-2 ms-1" style="background-color: #272727;"><span>Call of duty</span></a></div>
+                    <div class="item"><a href="" class="text-decoration-none text-white p-1 rounded-2 ms-1" style="background-color: #272727;"><span>Rap</span></a></div>
+                    <div class="item"><a href="" class="text-decoration-none text-white p-1 rounded-2 ms-1" style="background-color: #272727;"><span>Indie games</span></a></div>
+                    <div class="item"><a href="" class="text-decoration-none text-white p-1 rounded-2 ms-1" style="background-color: #272727;"><span>Rapping</span></a></div>
+                    <div class="item"><a href="" class="text-decoration-none text-white p-1 rounded-2 ms-1" style="background-color: #272727;"><span>Comedy</span></a></div>
+                    <div class="item"><a href="" class="text-decoration-none text-white p-1 rounded-2 ms-1" style="background-color: #272727;"><span>Cars</span></a></div>
+                    <div class="item"><a href="" class="text-decoration-none text-white p-1 rounded-2 ms-1" style="background-color: #272727;"><span>Recently uploaded</span></a></div>
+                    <div class="item"><a href="" class="text-decoration-none text-white p-1 rounded-2 ms-1" style="background-color: #272727;"><span>Live</span></a></div>
+                    <div class="item"><a href="" class="text-decoration-none text-white p-1 rounded-2 ms-1" style="background-color: #272727;"><span>Action-games</span></a></div>
+                    <div class="item"><a href="" class="text-decoration-none text-white p-1 rounded-2 ms-1" style="background-color: #272727;"><span>New to you</span></a></div>
+                    <div class="item"><a href="" class="text-decoration-none text-white p-1 rounded-2 ms-1" style="background-color: #272727;"><span>freestyle</span></a></div>
+                </div>
+            </div>
+            <div class="container-fluid position-fixed bottom-0" style="background-color: #0F0F0F; z-index: 9998;">
+                <div class="row d-flex align-items-center justify-content-center">
+                    <div class="col text-center"><i class="fa-solid fa-house"></i> <p>Home</p> </div>
+                    <div class="col text-center"><i class="fa-brands fa-square-youtube"></i> <p>Shorts</p></div>
+                    <div class="col text-center"><i class="fa-solid fa-film"></i> <p>Subscribtion</p></div>
+                    <div class="col text-center"><img src="img/my user5.jpg" style="width: 30px;" alt="" class="rounded-5 img-fluid"> <p>you</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+    <div class="container-fluid d-lg-none" style="padding-top: 95px;">
+        <div class="row">
+            <div class="col-12 fs-3"><i class="fa-brands fa-square-youtube" style="color: #ff0000;"></i> <span class="ms-2 fw-bolder">Shorts</span></div>
+            <div class="col-6 position-relative"><img src="img/rename (1).jpg" alt="" class="img-fluid mt-3 rounded-3"> <span class="position-absolute fw-bold" style="bottom: 0;left: 0.85rem;">مغز متفکر 🧠😂</span> </div>
+            <div class="col-6 position-relative"><img src="img/rename (2).jpg" alt="" class="img-fluid mt-3 rounded-3"> <span class="position-absolute fw-bold" style="bottom: 0;left: 0.85rem;">oliver khan evoulation 🩻</span></div>
+            <div class="col-6 position-relative"><img src="img/oar2 (3).jpg" alt="" class="img-fluid mt-3 rounded-3"> <span class="position-absolute fw-bold" style="bottom: 0;left: 0.85rem;">وقتی اپ رفیق کمونیستمو باز میکنم</span></div>
+            <div class="col-6 position-relative"><img src="img/rename (4).jpg" alt="" class="img-fluid mt-3 rounded-3"><span class="position-absolute fw-bold" style="bottom: 0;left: 0.85rem;">اجرای گنگ کایوت در میتینگ 🔴</span></div>
+
+            <div class="col-12 mt-3"><img src="img/youuu (4).jpg" alt="" class="img-fluid"></div>
+            <div class="col-2"><img src="img/channels4_profile(11).jpg" width="45" alt="" class="img-fluid rounded-5 mt-2"></div>
+            <div class="col-8"><span>test dies in every planets</span><br><span>NASA TESTER</span><br><span>256k views . 3days ago</span></div>
+            <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+
+            <div class="col-12 mt-3"><img src="img/you1 (1).jpg" alt="" class="img-fluid"></div>
+            <div class="col-2"><img src="img/unnamed(3).jpg" width="45" alt="" class="img-fluid rounded-5 mt-2"></div>
+            <div class="col-8"><span>how to get 10.000.000$ in vscode</span><br><span>Qsiter</span><br><span>82k views . 3months ago</span></div>
+            <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+
+            <div class="col-12 mt-3"><img src="img/youuu (2).jpg" alt="" class="img-fluid"></div>
+            <div class="col-2"><img src="img/hackerrr.jpg" width="45" alt="" class="img-fluid rounded-5 mt-2"></div>
+            <div class="col-8"><span>تنها VPN رایگان برای سیستم ها</span><br><span>آموزش پیسی|PC</span><br><span>11k views . 13days ago</span></div>
+            <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+
+            <div class="col-12 mt-3"><img src="img/you1 (4).jpg" alt="" class="img-fluid"></div>
+            <div class="col-2"><img src="img/gaming.jpg" width="45" alt="" class="img-fluid rounded-5 mt-2"></div>
+            <div class="col-8"><span>ترسناک ترین 1 ساعت زندگیمون با پارسا 😂</span><br><span>KEOXER GAMING</span><br><span>100k views . 6days ago</span></div>
+            <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+
+            <div class="col-12 mt-3"><img src="img/mama.jpg" alt="" class="img-fluid"></div>
+            <div class="col-2"><img src="img/matarzak.jpg" width="45" alt="" class="img-fluid rounded-5 mt-2"></div>
+            <div class="col-8"><span>زندگی رپرا در واقعیت (شوخی)</span><br><span>Matarzak</span><br><span>96k views . 4months ago</span></div>
+            <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+
+            <div class="col-12 mt-3"><img src="img/nejat ha (2).jpg" alt="" class="img-fluid"></div>
+            <div class="col-2"><img src="img/channels4_profile(4).jpg" width="45" alt="" class="img-fluid rounded-5 mt-2"></div>
+            <div class="col-8"><span>سفر تا هتل گراماتایت با سایبر تراک</span><br><span>KEOXER</span><br><span>400k views . 6months ago</span></div>
+            <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+
+            <div class="col-12 mt-3"><img src="img/youuu (1).jpg" alt="" class="img-fluid"></div>
+            <div class="col-2"><img src="img/channels4_profile(16).jpg" width="45" alt="" class="img-fluid rounded-5 mt-2"></div>
+            <div class="col-8"><span>رزیدنت ایول 4 و روی ps2 بازی کردم</span><br><span>pedram knight</span><br><span>22k views . 4days ago</span></div>
+            <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+
+            <div class="col-12 mt-3"><img src="img/mymy (3).jpg" alt="" class="img-fluid"></div>
+            <div class="col-2"><img src="img/yazdan.jpg" width="45" alt="" class="img-fluid rounded-5 mt-2"></div>
+            <div class="col-8"><span>free style of MESHKI by (KHOON)</span><br><span>RadioActive Zone</span><br><span>46k views . 8days ago</span></div>
+            <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+
+            <div class="col-12 mt-3"><img src="img/nejat ha (1).jpg" alt="" class="img-fluid"></div>
+            <div class="col-2"><img src="img/yazdan.jpg" width="45" alt="" class="img-fluid rounded-5 mt-2"></div>
+            <div class="col-8"><span>کی قوی تر زد با پوتک</span><br><span>RadioActive Zone</span><br><span>358k views . 9months ago</span></div>
+            <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+
+            <div class="col-12 mt-3"><img src="img/mymy (2).jpg" alt="" class="img-fluid"></div>
+            <div class="col-2"><img src="img/night.jpg" width="45" alt="" class="img-fluid rounded-5 mt-2"></div>
+            <div class="col-8"><span>sad music with latenight no copyright</span><br><span>Late Night</span><br><span>144k views . 2weeks ago</span></div>
+            <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+
+            <div class="col-12 mt-3"><img src="img/hq720(4).jpg" alt="" class="img-fluid"></div>
+            <div class="col-2"><img src="img/channels4_profile(4).jpg" width="45" alt="" class="img-fluid rounded-5 mt-2"></div>
+            <div class="col-8"><span>عجیب ترین لایف هک های تیک تاک و تست کردیم</span><br><span>KEOXER</span><br><span>371k views . 4months ago</span></div>
+            <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+            
+            <div class="col-12 mt-3"><img src="img/you1 (2).jpg" alt="" class="img-fluid"></div>
+            <div class="col-2"><img src="img/matarzak.jpg" width="45" alt="" class="img-fluid rounded-5 mt-2"></div>
+            <div class="col-8"><span>برای این ویدیو به کمک علیض نیاز داشتم</span><br><span>Matarzak</span><br><span>86k views . 3months ago</span></div>
+            <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+
+            <div class="col-12 mt-3"><img src="img/hq720.jpg" alt="" class="img-fluid"></div>
+            <div class="col-2"><img src="img/channels4_profile(1).jpg" width="45" alt="" class="img-fluid rounded-5 mt-2"></div>
+            <div class="col-8"><span>عحیب ترین بازی ویروسی دنیا و نصب کردم</span><br><span>Scorpro</span><br><span>73k views . 1months ago</span></div>
+            <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+
+            <div class="col-12 mt-3"><img src="img/beni.jpg" alt="" class="img-fluid"></div>
+            <div class="col-2"><img src="img/beniiii.jpg" width="45" alt="" class="img-fluid rounded-5 mt-2"></div>
+            <div class="col-8"><span>از ps5 محافظت کن وگرنه ...💣</span><br><span>THE BENYAMIN</span><br><span>744k views . 1weeks ago</span></div>
+            <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+
+            <div class="col-12 mt-3"><img src="img/you10.jpg" alt="" class="img-fluid"></div>
+            <div class="col-2"><img src="img/channels4_profile(1).jpg" width="45" alt="" class="img-fluid rounded-5 mt-2"></div>
+            <div class="col-8"><span>با حاج پاندا رفتیم اداره برق و نابود کردیم</span><br><span>Scorpro</span><br><span>65k views . 4days ago</span></div>
+            <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+
+            <div class="col-12 mt-3"><img src="img/adbghzbdsj.jpg" alt="" class="img-fluid"></div>
+            <div class="col-2"><img src="img/kouman.jpg" width="45" alt="" class="img-fluid rounded-5 mt-2"></div>
+            <div class="col-8"><span>بهترین فست فود دنیا چیه؟</span><br><span>KOUMAN</span><br><span>645k views . 9days ago</span></div>
+            <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+
+            <div class="col-12 mt-3"><img src="img/codmm.jpg" alt="" class="img-fluid"></div>
+            <div class="col-2"><img src="img/mac.jpg" width="45" alt="" class="img-fluid rounded-5 mt-2" style="border:2px solid red;"></div>
+            <div class="col-8"><span>لایو رنک با مک جیمز</span><br><span>mac james</span><br><span class="bg-danger rounded-3">LIVE</span></div>
+            <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+
+            <div class="col-12 fs-3"><i class="fa-brands fa-square-youtube" style="color: #ff0000;"></i> <span class="ms-2 fw-bolder">Shorts</span></div>
+            <div class="col-6 position-relative"><img src="img/shorts (2).jpg" alt="" class="img-fluid mt-3 rounded-3"> <span class="position-absolute fw-bold" style="bottom: 0;left: 0.85rem;">اگر رونالدو ملیت های دیگری داشت چه کاره میشد؟</span> </div>
+            <div class="col-6 position-relative"><img src="img/shorts (1).jpg" alt="" class="img-fluid mt-3 rounded-3"> <span class="position-absolute fw-bold " style="bottom: 0;left: 0.85rem;">رتبه بندی نسخه های god of war</span></div>
+            <div class="col-6 position-relative"><img src="img/shorts (4).jpg" alt="" class="img-fluid mt-3 rounded-3"> <span class="position-absolute fw-bold" style="bottom: 0;left: 0.85rem;">کدوم گزارش بهتر بود ؟ 😍</span></div>
+            <div class="col-6 position-relative"><img src="img/iboom.jpg" alt="" class="img-fluid mt-3 rounded-3"><span class="position-absolute fw-bold" style="bottom: 0;left: 0.85rem;">آیبوم تو سگ منی بیا دوئل 🤬💢</span></div>
+
+            <div class="col-12 mt-3"><img src="img/youuu (3).jpg" alt="" class="img-fluid"></div>
+            <div class="col-2"><img src="img/channels4_profile(6).jpg" width="45" alt="" class="img-fluid rounded-5 mt-2"></div>
+            <div class="col-8"><span>challange of 1months in jungle with home</span><br><span>challeng(S)</span><br><span>753k views . 1days ago</span></div>
+            <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+
+            <div class="col-12 mt-3"><img src="img/mrbeast.jpg" alt="" class="img-fluid"></div>
+            <div class="col-2"><img src="img/aghaye hayoola.jpg" width="45" alt="" class="img-fluid rounded-5 mt-2"></div>
+            <div class="col-8"><span>1.000.000.000$ chocolate factory tour</span><br><span>Mrbeast</span><br><span>22M views . 2days ago</span></div>
+            <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+
+            <div class="col-12 mt-3"><img src="img/saberi (1).jpg" alt="" class="img-fluid"></div>
+            <div class="col-2"><img src="img/sam.jpg" width="45" alt="" class="img-fluid rounded-5 mt-2"></div>
+            <div class="col-8"><span>تیم آریا کئوکسر میبره یا تیم سام صابری</span><br><span>SAM SABERI</span><br><span>259k views . 1months ago</span></div>
+            <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+
+            <div class="col-12 mt-3"><img src="img/nejat ha (3).jpg" alt="" class="img-fluid"></div>
+            <div class="col-2"><img src="img/channels4_profile(1).jpg" width="45" alt="" class="img-fluid rounded-5 mt-2"></div>
+            <div class="col-8"><span>بهترین بازی جهان و نصب کردم 😂</span><br><span>Scorpro</span><br><span>88k views . 7months ago</span></div>
+            <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+
+            <div class="col-12 mt-3"><img src="img/youuu (7).jpg" alt="" class="img-fluid"></div>
+            <div class="col-2"><img src="img/football.jpg" width="45" alt="" class="img-fluid rounded-5 mt-2"></div>
+            <div class="col-8"><span>juventus VS inter ucl match</span><br><span>football matches</span><br><span>665k views . 2months ago</span></div>
+            <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+
+            <div class="col-12 mt-3"><img src="img/saberi (2).jpg" alt="" class="img-fluid"></div>
+            <div class="col-2"><img src="img/sam.jpg" width="45" alt="" class="img-fluid rounded-5 mt-2"></div>
+            <div class="col-8"><span>دوستام سوپرایزم کردن (ماشین جدید)</span><br><span>SAM SABERI</span><br><span>389k views . 7days ago</span></div>
+            <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+
+            <div class="row  " style="padding: 5rem;">
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <div class="spinner-border" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="container-fluid d-none d-lg-block" style="padding-top: 150px;">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col">
+                <div class="row">
+                    <div class="col-12"><img src="img/you1 (2).jpg" class="img-fluid" alt=""></div>
+                    <div class="col-2 mt-2"><img src="img/matarzak.jpg" alt="" class="img-fluid rounded-5" style="width: 45px;"></div>
+                    <div class="col-8 mt-2">
+                        <span>برای این ویدیو به کمک علیض نیاز داشتم</span><br>
+                        <span>Matarzak</span><br>
+                        <span>86k views . 3months ago</span>
+                    </div>
+                    <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="row">
+                    <div class="col-12"><img src="img/beni.jpg" class="img-fluid" alt=""></div>
+                    <div class="col-2 mt-2"><img src="img/beniiii.jpg" alt="" class="img-fluid rounded-5" style="width: 45px;"></div>
+                    <div class="col-8 mt-2">
+                        <span>از ps5 محافظت کن وگرنه ... 💣</span><br>
+                        <span>THE BENYAMIN</span><br>
+                        <span>744k views . 1weeks ago</span>
+                    </div>
+                    <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col-12"><img src="img/adbghzbdsj.jpg" class="img-fluid" alt=""></div>
+                    <div class="col-2 mt-2"><img src="img/kouman.jpg" alt="" class="img-fluid rounded-5" style="width: 45px;"></div>
+                    <div class="col-8 mt-2">
+                        <span>بهترین فست فود دنیا چیه ؟</span><br>
+                        <span>KOUMAN</span><br>
+                        <span>645k views . 9days ago</span>
+                    </div>
+                    <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+            <div class="row">
+                <div class="col-11 offset-1 fs-3"><i class="fa-brands fa-square-youtube" style="color: #ff0000;"></i> <span class="ms-2 fw-bolder">Shorts</span></div>
+                <div class="col-1"></div>
+                <div class="col "><img src="img/rename (1).jpg" alt="" class="img-fluid mt-3 rounded-3"> <p class="fw-bold">مغز متفکر 🧠😂</p> <p>886k views</p> </div>
+                <div class="col "><img src="img/rename (2).jpg" alt="" class="img-fluid mt-3 rounded-3"> <p class=" fw-bold">oliver khan evoulation 🩻</p> <p>8.6M views </p></div>
+                <div class="col "><img src="img/oar2 (3).jpg" alt="" class="img-fluid mt-3 rounded-3"> <p class="fw-bold" >وقتی اپ رفیق کمونیستمو باز میکنم</p>67k views <p></p></div>
+                <div class="col "><img src="img/rename (4).jpg" alt="" class="img-fluid mt-3 rounded-3"><p class="fw-bold" >اجرای گنگ کایوت در میتینگ 🔴</p> <p>126k views</p></div>
+                <div class="col-1"></div>
+            </div>
+
+            <div class="row">
+            <div class="col-1"></div>
+            <div class="col">
+                <div class="row">
+                    <div class="col-12"><img src="img/hq720 (1).jpg" class="img-fluid" alt=""></div>
+                    <div class="col-2 mt-2"><img src="img/4555.jpg" alt="" class="img-fluid rounded-5" style="width: 45px;"></div>
+                    <div class="col-8 mt-2">
+                        <span>وقتی رفیقت بعد 10 سال ... 💔</span><br>
+                        <span>Abarfazr</span><br>
+                        <span>75k views . 1months ago</span>
+                    </div>
+                    <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="row">
+                    <div class="col-12"><img src="img/hq720(4).jpg" class="img-fluid" alt=""></div>
+                    <div class="col-2 mt-2"><img src="img/channels4_profile(4).jpg" alt="" class="img-fluid rounded-5" style="width: 45px;"></div>
+                    <div class="col-8 mt-2">
+                        <span>عجیب ترین لایف هک های تیک تاک و تست کردیم</span><br>
+                        <span>KEOXER</span><br>
+                        <span>371k views . 4months ago</span>
+                    </div>
+                    <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col-12"><img src="img/miting.jpg" class="img-fluid" alt=""></div>
+                    <div class="col-2 mt-2"><img src="img/colony.jpg" alt="" class="img-fluid rounded-5" style="width: 45px;"></div>
+                    <div class="col-8 mt-2">
+                        <span>اولین برگزاری میتینگ در کرج با برگزاری آرمین رابر</span><br>
+                        <span>Hip Hop Colony</span><br>
+                        <span>228k views . 1months ago</span>
+                    </div>
+                    <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col">
+                <div class="row">
+                    <div class="col-12"><img src="img/saberi (1).jpg" class="img-fluid" alt=""></div>
+                    <div class="col-2 mt-2"><img src="img/sam.jpg" alt="" class="img-fluid rounded-5" style="width: 45px;"></div>
+                    <div class="col-8 mt-2">
+                        <span>تیم آریا کئوکسر میبره یا تیم سام صابری</span><br>
+                        <span>SAM SABERI</span><br>
+                        <span>259k views . 1months ago</span>
+                    </div>
+                    <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="row">
+                    <div class="col-12"><img src="img/mama.jpg" class="img-fluid" alt=""></div>
+                    <div class="col-2 mt-2"><img src="img/matarzak.jpg" alt="" class="img-fluid rounded-5" style="width: 45px;"></div>
+                    <div class="col-8 mt-2">
+                        <span>زندگی رپرا در واقعیت (شوخی)</span><br>
+                        <span>Matarzak</span><br>
+                        <span>94k views . 4months ago</span>
+                    </div>
+                    <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col-12"><img src="img/pro.jpg" class="img-fluid" alt=""></div>
+                    <div class="col-2 mt-2"><img src="img/channels4_profile(1).jpg" alt="" class="img-fluid rounded-5" style="width: 45px;"></div>
+                    <div class="col-8 mt-2">
+                        <span>اگر به بوته ضربه بزنی میمیری 😭</span><br>
+                        <span>Scorpro</span><br>
+                        <span>85k views . 2months ago</span>
+                    </div>
+                    <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+        <div class="row">
+                <div class="col-11 offset-1 fs-3"><i class="fa-brands fa-square-youtube" style="color: #ff0000;"></i> <span class="ms-2 fw-bolder">Shorts</span></div>
+                <div class="col-1"></div>
+                <div class="col "><img src="img/khhoob (1).jpg" alt="" class="img-fluid mt-3 rounded-3"> <p class="fw-bold">وقتی پز اکانتتو میدی 😂</p> <p>90k views</p> </div>
+                <div class="col "><img src="img/oar2(3).jpg" alt="" class="img-fluid mt-3 rounded-3"> <p class=" fw-bold">skip an boss in elden ring (HARD mode)</p> <p>53.8M views </p></div>
+                <div class="col "><img src="img/shorts (3).jpg" alt="" class="img-fluid mt-3 rounded-3"> <p class="fw-bold" >سخت ترین دشمن در انیمیشن بن تن کی بود ؟</p>38k views <p></p></div>
+                <div class="col "><img src="img/shorts (4).jpg" alt="" class="img-fluid mt-3 rounded-3"><p class="fw-bold" >کدوم گزارش بهتر بود 😍</p> <p>181k views</p></div>
+                <div class="col-1"></div>
+            </div>
+
+            <div class="row">
+            <div class="col-1"></div>
+            <div class="col">
+                <div class="row">
+                    <div class="col-12"><img src="img/mymy (1).jpg" class="img-fluid" alt=""></div>
+                    <div class="col-2 mt-2"><img src="img/channels4_profile(1).jpg" alt="" class="img-fluid rounded-5" style="width: 45px;"></div>
+                    <div class="col-8 mt-2">
+                        <span>میخوساتم ریاضی یاد بگیرم ولی معلمم روانی بود</span><br>
+                        <span>Scorpro</span><br>
+                        <span>84k views . 5days ago</span>
+                    </div>
+                    <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="row">
+                    <div class="col-12"><img src="img/nejat ha (1).jpg" class="img-fluid" alt=""></div>
+                    <div class="col-2 mt-2"><img src="img/yazdan.jpg" alt="" class="img-fluid rounded-5" style="width: 45px;"></div>
+                    <div class="col-8 mt-2">
+                        <span>کی قوی تر زد همراه با پوتک</span><br>
+                        <span>RadioActice Zone</span><br>
+                        <span>358k views . 9months ago</span>
+                    </div>
+                    <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col-12"><img src="img/mrbeast.jpg" class="img-fluid" alt=""></div>
+                    <div class="col-2 mt-2"><img src="img/aghaye hayoola.jpg" alt="" class="img-fluid rounded-5" style="width: 45px;"></div>
+                    <div class="col-8 mt-2">
+                        <span>1.000.000.000$ chocolate factory tour</span><br>
+                        <span>Mrbeast</span><br>
+                        <span>22M views . 2days ago</span>
+                    </div>
+                    <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col">
+                <div class="row">
+                    <div class="col-12"><img src="img/mymy (3).jpg" class="img-fluid" alt=""></div>
+                    <div class="col-2 mt-2"><img src="img/yazdan.jpg" alt="" class="img-fluid rounded-5" style="width: 45px;"></div>
+                    <div class="col-8 mt-2">
+                        <span>free style of MESHKI by (KHOON)</span><br>
+                        <span>RadioActice Zone</span><br>
+                        <span>46k views . 8days ago</span>
+                    </div>
+                    <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="row">
+                    <div class="col-12"><img src="img/mymy (4).jpg" class="img-fluid" alt=""></div>
+                    <div class="col-2 mt-2"><img src="img/channels4_profile(6).jpg" alt="" class="img-fluid rounded-5" style="width: 45px;"></div>
+                    <div class="col-8 mt-2">
+                        <span>challange of 1months in jungle with home</span><br>
+                        <span>challange(S)</span><br>
+                        <span>753k views . 1days ago</span>
+                    </div>
+                    <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col-12"><img src="img/welag.jpg" class="img-fluid" alt=""></div>
+                    <div class="col-2 mt-2"><img src="img/kouman.jpg" alt="" class="img-fluid rounded-5" style="width: 45px;"></div>
+                    <div class="col-8 mt-2">
+                        <span>ولاگ یه روز گرم تابستونی با کومان ☀️😎</span><br>
+                        <span>KOUMAN</span><br>
+                        <span>715k views . 2months ago</span>
+                    </div>
+                    <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col">
+                <div class="row">
+                    <div class="col-12"><img src="img/youuu (7).jpg" class="img-fluid" alt=""></div>
+                    <div class="col-2 mt-2"><img src="img/football.jpg" alt="" class="img-fluid rounded-5" style="width: 45px;"></div>
+                    <div class="col-8 mt-2">
+                        <span>juventus VS inter ucl match</span><br>
+                        <span>football challange</span><br>
+                        <span>665k views . 2months ago</span>
+                    </div>
+                    <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="row">
+                    <div class="col-12"><img src="img/youuu (4).jpg" class="img-fluid" alt=""></div>
+                    <div class="col-2 mt-2"><img src="img/channels4_profile(11).jpg" alt="" class="img-fluid rounded-5" style="width: 45px;"></div>
+                    <div class="col-8 mt-2">
+                        <span>test dies in every planets</span><br>
+                        <span>NASA TESTER</span><br>
+                        <span>256k views . 3days ago</span>
+                    </div>
+                    <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col-12"><img src="img/youuu (2).jpg" class="img-fluid" alt=""></div>
+                    <div class="col-2 mt-2"><img src="img/hackerrr.jpg" alt="" class="img-fluid rounded-5" style="width: 45px;"></div>
+                    <div class="col-8 mt-2">
+                        <span>تنها VPN رایگان برای سیستم ها</span><br>
+                        <span>آموزش پیسی|PC</span><br>
+                        <span>11k views . 13daus ago</span>
+                    </div>
+                    <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col">
+                <div class="row">
+                    <div class="col-12"><img src="img/youuu (1).jpg" class="img-fluid" alt=""></div>
+                    <div class="col-2 mt-2"><img src="img/channels4_profile(16).jpg" alt="" class="img-fluid rounded-5" style="width: 45px;"></div>
+                    <div class="col-8 mt-2">
+                        <span>رزیدنت ایول 4 و روی ps2 بازی کردم 😭</span><br>
+                        <span>pedram knight</span><br>
+                        <span>22k views . 4days ago</span>
+                    </div>
+                    <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="row">
+                    <div class="col-12"><img src="img/you10.jpg" class="img-fluid" alt=""></div>
+                    <div class="col-2 mt-2"><img src="img/channels4_profile(1).jpg" alt="" class="img-fluid rounded-5" style="width: 45px;"></div>
+                    <div class="col-8 mt-2">
+                        <span>با حاج پاندا رفتیم اداره برق و نابود کردیم</span><br>
+                        <span>Scorpro</span><br>
+                        <span>65k views . 4days ago</span>
+                    </div>
+                    <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col-12"><img src="img/you1 (4).jpg" class="img-fluid" alt=""></div>
+                    <div class="col-2 mt-2"><img src="img/gaming.jpg" alt="" class="img-fluid rounded-5" style="width: 45px;"></div>
+                    <div class="col-8 mt-2">
+                        <span>ترسناک ترین 1 ساعت زندگیمون با پارسا 😂</span><br>
+                        <span>KEOXER GAMING</span><br>
+                        <span>100k views . 6days ago</span>
+                    </div>
+                    <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col">
+                <div class="row">
+                    <div class="col-12"><img src="img/youuu (5).jpg" class="img-fluid" alt=""></div>
+                    <div class="col-2 mt-2"><img src="img/channels4_profile(12).jpg" alt="" class="img-fluid rounded-5" style="width: 45px;"></div>
+                    <div class="col-8 mt-2">
+                        <span>مقایسه poco pro با ipad 2024 pro</span><br>
+                        <span>melogamer</span><br>
+                        <span>65k views . 2months ago</span>
+                    </div>
+                    <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="row">
+                    <div class="col-12"><img src="img/you1 (1).jpg" class="img-fluid" alt=""></div>
+                    <div class="col-2 mt-2"><img src="img/unnamed(3).jpg" alt="" class="img-fluid rounded-5" style="width: 45px;"></div>
+                    <div class="col-8 mt-2">
+                        <span>how to get 10.000.000$ in vscode</span><br>
+                        <span>Qsiter</span><br>
+                        <span>86k views . 3months ago</span>
+                    </div>
+                    <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row d-flex align-items-center">
+                    <div class="col-12"><img src="img/tabligh.jpg" class="img-fluid" alt=""></div>
+                    <div class="col-1 mt-2"><img src="img/ddd.jpg" alt="" class="img-fluid rounded-5" style="width: 45px;"></div>
+                    <div class="col-11 mt-2">
+                        <div class="row p-3">
+                            <div class="col-6">
+                                <a href="" class="text-decoration-none fw-bolder"><div class="bg-body-secondary text-info rounded-5 d-flex justify-content-center"><span>watch full</span></div></a>
+                            </div>
+                            <div class="col-6">
+                                <a href="" class="text-decoration-none fw-bolder"><div class="bg-info text-body-secondary rounded-5 d-flex justify-content-center"><span>sign up</span></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col">
+                <div class="row">
+                    <div class="col-12"><img src="img/saberi (2).jpg" class="img-fluid" alt=""></div>
+                    <div class="col-2 mt-2"><img src="img/sam.jpg" alt="" class="img-fluid rounded-5" style="width: 45px;"></div>
+                    <div class="col-8 mt-2">
+                        <span>دوستام سوپرایزم کردن (ماشین جدید)</span><br>
+                        <span>SAM SABERI</span><br>
+                        <span>389k views . 7days ago</span>
+                    </div>
+                    <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="row">
+                    <div class="col-12"><img src="img/nejat ha (2).jpg" class="img-fluid" alt=""></div>
+                    <div class="col-2 mt-2"><img src="img/channels4_profile(4).jpg" alt="" class="img-fluid rounded-5" style="width: 45px;"></div>
+                    <div class="col-8 mt-2">
+                        <span>سفر تا هتل گراماتایت با سایبر تراک</span><br>
+                        <span>KEOXER</span><br>
+                        <span>400k views . 6months ago</span>
+                    </div>
+                    <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col-12"><img src="img/codmm.jpg" class="img-fluid" alt=""></div>
+                    <div class="col-2 mt-2"><img src="img/mac.jpg" alt="" class="img-fluid rounded-5" style="width: 45px;border:2px solid red;"></div>
+                    <div class="col-8 mt-2">
+                        <span>لایو رنک با مک جیمز</span><br>
+                        <span>mac james</span><br>
+                        <span class="bg-danger rounded-3">LIVE</span>
+                    </div>
+                    <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+        <div class="row mt-5 p-3" >
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <div class="spinner-border" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+    
+
+
+
+
+
+
+
+
+    
+    
+    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="jquery-3.7.1.slim.min.js"></script>
+    <script src="owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+    $(".owl-carousel").owlCarousel();
+    });
+    $('.newowl1').owlCarousel({
+    loop:false,
+    margin:10,
+    rtl:false,
+    dots:false,
+    nav:false,
+    responsive:{
+        0:{
+            items:3
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+    </script>
+</body>
+</html>
